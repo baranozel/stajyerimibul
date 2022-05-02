@@ -16,15 +16,15 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-6"><label class="labels">Ad</label><input type="text" class="form-control2"
-                            placeholder="ad" value=""></div>
+                            placeholder="ad" value="<?php echo $this->session->userdata('First_Name'); ?>"></div>
                     <div class="col-md-6"><label class="labels">Soyad</label><input type="text" class="form-control2"
-                            value="" placeholder="soyad"></div>
+                            value="<?php echo $this->session->userdata('Last_Name'); ?>" placeholder="soyad"></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12"><label class="labels">Telefon Numarası</label><input type="text"
                             class="form-control2" placeholder="telefon numarası" value=""></div>
                     <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control2"
-                            placeholder="email" value=""></div>
+                            placeholder="email" value="<?php echo $this->session->userdata('email'); ?>"></div>
                     <div class="col-md-12">
                         <label class="labels">Öğrenim</label>
                         <select class="form-control" id="sel1">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-6"><label class="labels">Şehir</label><input type="text" class="form-control2"
-                            placeholder="şehir" value=""></div>
+                            placeholder="şehir" value="<?php echo $this->session->userdata('city'); ?>"></div>
                     <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
                             value="" placeholder="semt"></div>
                 </div>

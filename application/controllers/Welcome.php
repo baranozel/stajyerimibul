@@ -17,4 +17,14 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('signup');
 	}
+
+	public function profil()
+	{
+		$this->load->view('profil');
+	}
+
+	public function profilSettings()
+	{
+		$this->load->view('profil_settings');
+	}
 }

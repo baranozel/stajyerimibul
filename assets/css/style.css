@@ -338,7 +338,8 @@ input[type="checkbox"]:checked+.check {
 
 
 input,
-textarea {
+textarea,
+select {
     background-color: #F3E5F5;
     border-radius: 50px !important;
     padding: 12px 15px 12px 15px !important;
@@ -352,7 +353,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -506,3 +508,48 @@ a:hover {
         margin-bottom: 50px !important
     }
 }
+
+
+
+.form-control2:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: linear-gradient(45deg,#ee3251,#ff4d6b);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: linear-gradient(45deg,#ff4d6b,#ee3251);
+}
+
+.profile-button:focus {
+    background: linear-gradient(45deg,#ff4d6b,#ee3251);    box-shadow: none
+}
+
+.profile-button:active {
+    background: linear-gradient(45deg,#ff4d6b,#ee3251);    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: linear-gradient(45deg,#ee3251,#ff4d6b);
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px linear-gradient(45deg,#ee3251,#ff4d6b);
+}
+
+
+
+

@@ -40,7 +40,29 @@
                     <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
                             value="" placeholder="semt"></div>
                 </div>
-                <div class="mt-5 text-center"><button class="btn  profile-button" type="button">Kaydet</button></div>
+                <div class="mt-5 text-center"><button class="btn profile-button" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Kaydet</button></div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Profil bilgilerinizi güncellemek istediğinize emin misiniz?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                        <button type="button" class="btn profile-button">Değişiklikleri Kaydet</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                
             </div>
         </div>
         <div class="col-md-4">

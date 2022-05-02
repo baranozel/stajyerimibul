@@ -1,0 +1,1 @@
+<a href="<?php echo base_url("welcome/profilSettings"); ?>">Profil Settings -> </a>

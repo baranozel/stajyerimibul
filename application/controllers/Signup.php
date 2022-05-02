@@ -23,7 +23,7 @@ class signup extends CI_Controller
                     "Last_Name" => strip_tags(trim($this->input->post('Last_Name', true))),
                     "city" => strip_tags(trim($this->input->post('city', true))),
                     "email" => strip_tags(trim($this->input->post('email', true))),
-                    "sifre" => sha1(md5(strip_tags(trim($this->input->post('First_Name', true)))))
+                    "sifre" => sha1(md5(strip_tags(trim($this->input->post('sifre', true)))))
 
                 );
 

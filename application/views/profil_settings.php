@@ -22,5 +22,7 @@
 
 
 <!--SCRİPTS-->
-
+<script>
+    
+</script>
 <?php $this->load->view("includes_v/scripts_v.php"); ?>

@@ -57,20 +57,35 @@
                     </div>
                 </form>
 
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center experience">
-                    <span>Deneyimler</span><span class="border px-3 p-1 add-experience"><i
-                            class="fa fa-plus"></i>&nbsp;Ekle</span>
-                </div><br>
-                <div class="col-md-12"><label class="labels">Bilmemne olarak</label><input type="text"
-                        class="form-control2" placeholder="bilmemne bilmemne şirketi" disabled value=""></div> <br>
-                <div class="col-md-12"><label class="labels">Bilmemne olarak</label><input type="text"
-                        class="form-control2" placeholder="bilmemne bilmemne şirketi" disabled value=""></div> <br>
-            </div>
-        </div>
+
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">Şehir</label><input type="text" class="form-control2"
+                            placeholder="şehir" value="<?php echo $this->session->userdata('city'); ?>"></div>
+                    <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
+                            value="" placeholder="semt"></div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn profile-button" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Kaydet</button></div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Profil bilgilerinizi güncellemek istediğinize emin misiniz?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                        <button type="button" class="btn profile-button">Değişiklikleri Kaydet</button>
+                    </div>
+                    </div>
+                </div>
+                </div>            
+
     </div>
 </div>
 </div>

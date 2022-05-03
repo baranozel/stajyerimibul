@@ -29,7 +29,7 @@ class login extends CI_Controller
                         'First_Name' => $query->First_Name,
                         'Last_Name' => $query->Last_Name,
                         'city'      => $query->city,
-                        'phone'     => $query->phone
+
                     ]);
 
 

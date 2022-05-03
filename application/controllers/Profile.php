@@ -3,10 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class profile extends CI_Controller
 {
-    public function index()
-    {
-        $this->load->view('welcome/profilSettings');
-    }
+
 
     public function profiledata()
     {
@@ -14,7 +11,7 @@ class profile extends CI_Controller
             $this->form_validation->set_rules('First_Name', 'Ad', 'trim|required');
             $this->form_validation->set_rules('Last_Name', 'Soyad', 'trim|required');
             $this->form_validation->set_rules('phone', 'Telefon Numarası', 'trim|required');
-            $this->form_validation->set_rules('email', 'E-mail', 'trim|required');
+            $this->form_validation->set_rules('email', 'E-mail', 'trim|required|valid_email');
             $this->form_validation->set_rules('city', 'Şehir', 'trim|required');
             $this->form_validation->set_rules('semt', 'Semt', 'trim|required');
         }

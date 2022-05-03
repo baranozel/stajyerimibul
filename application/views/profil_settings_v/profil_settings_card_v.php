@@ -9,6 +9,7 @@
                 <span class="text-black-50"><?php echo $this->session->userdata('email'); ?></span><span> </span>
             </div>
         </div>
+
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -22,8 +23,10 @@
                         <div class="col-md-6"><label class="labels">Soyad</label><input type="text"
                                 class="form-control2" value="<?php echo $this->session->userdata('Last_Name'); ?>"
                                 placeholder="soyad"></div>
+
                     </div>
                     <div class="row mt-3">
+
                         <div class="col-md-12"><label class="labels">Telefon Numarası</label><input type="text"
                                 class="form-control2" placeholder="telefon numarası" value=""></div>
                         <div class="col-md-12"><label class="labels">Email</label><input type="text"
@@ -45,8 +48,7 @@
                         <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
                                 value="" placeholder="semt"></div>
                     </div>
-                    <div class="mt-5 text-center"><button class="btn  profile-button submit"
-                            type="button">Kaydet</button>
+                    <div class="mt-5 text-center"><button class="btn  profile-button submit">Kaydet</button>
                     </div>
                 </form>
             </div>

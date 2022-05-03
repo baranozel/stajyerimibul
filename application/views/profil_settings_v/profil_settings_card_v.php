@@ -14,33 +14,41 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="text-right">Profil Ayarları</h4>
                 </div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">Ad</label><input type="text" class="form-control2"
-                            placeholder="ad" value="<?php echo $this->session->userdata('First_Name'); ?>"></div>
-                    <div class="col-md-6"><label class="labels">Soyad</label><input type="text" class="form-control2"
-                            value="<?php echo $this->session->userdata('Last_Name'); ?>" placeholder="soyad"></div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Telefon Numarası</label><input type="text"
-                            class="form-control2" placeholder="telefon numarası" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control2"
-                            placeholder="email" value="<?php echo $this->session->userdata('email'); ?>"></div>
-                    <div class="col-md-12">
-                        <label class="labels">Öğrenim</label>
-                        <select class="form-control" id="sel1">
-                            <option>Üniversite</option>
-                            <option>Lise</option>
-                        </select>
-                    </div>
+                <form action="<?php echo base_url('profile/profiledata') ?>" method="POST">
+                    <div class="row mt-2">
 
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6"><label class="labels">Şehir</label><input type="text" class="form-control2"
-                            placeholder="şehir" value="<?php echo $this->session->userdata('city'); ?>"></div>
-                    <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
-                            value="" placeholder="semt"></div>
-                </div>
-                <div class="mt-5 text-center"><button class="btn  profile-button" type="button">Kaydet</button></div>
+                        <div class="col-md-6"><label class="labels">Ad</label><input type="text" class="form-control2"
+                                placeholder="ad" value="<?php echo $this->session->userdata('First_Name'); ?>"></div>
+                        <div class="col-md-6"><label class="labels">Soyad</label><input type="text"
+                                class="form-control2" value="<?php echo $this->session->userdata('Last_Name'); ?>"
+                                placeholder="soyad"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Telefon Numarası</label><input type="text"
+                                class="form-control2" placeholder="telefon numarası" value=""></div>
+                        <div class="col-md-12"><label class="labels">Email</label><input type="text"
+                                class="form-control2" placeholder="email"
+                                value="<?php echo $this->session->userdata('email'); ?>"></div>
+                        <div class="col-md-12">
+                            <label class="labels">Öğrenim</label>
+                            <select class="form-control" id="sel1">
+                                <option>Üniversite</option>
+                                <option>Lise</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Şehir</label><input type="text"
+                                class="form-control2" placeholder="şehir"
+                                value="<?php echo $this->session->userdata('city'); ?>"></div>
+                        <div class="col-md-6"><label class="labels">Semt</label><input type="text" class="form-control2"
+                                value="" placeholder="semt"></div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn  profile-button submit"
+                            type="button">Kaydet</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="col-md-4">
